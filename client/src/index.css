@@ -1,33 +1,21 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --font-family: Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --siteColor: #005792;
+    --hoverBg:#005792;
+    --hoverColor: white;
+ }
+ * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  text-decoration: none;
+  color: black;
+}
+.btn:hover {
+  background-color: var(--hoverBg);
+  color: var(--hoverColor);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.logo-main {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-.logo-main-a {
-  color: #0a66c2;
-  font-size: 26px;
-  font-weight: 700;
-}
-.logo-main-b {
-  background: #0a66c2;
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-  /* height: 24px; */
-  padding: 2px;
-  line-height: 23px;
-  border-radius: 3px;
-}
+@import url(./assets/components.css);

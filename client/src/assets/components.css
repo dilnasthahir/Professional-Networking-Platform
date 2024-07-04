@@ -1,0 +1,26 @@
+/* HEADER COMPONENT */
+.header-landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 0px 220px;
+}
+.header-landing-navs {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+span.header-landing-joinNow {
+    font-size: 17px;
+}
+button.header-landing-signIn {
+    background: none;
+    border: 2px solid var(--siteColor);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: var(--siteColor)
+}
+

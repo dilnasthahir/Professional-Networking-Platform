@@ -1,10 +1,11 @@
-import React from 'react'
+import LogoMain from '../assets/Logo-main.svg'
+import LogoIcon from '../assets/Logo-main.svg'
 
-function Logo() {
+function Logo({type, width, height}) {
   return (
-    <div className='logo-main'>
-        <div className="logo-main-a">Connect</div><div className='logo-main-b'>in</div>
-    </div>
+    <>
+      <img src={type="logo" ? LogoMain : LogoIcon } width={width} height={height} alt="LinkedLogo" className='logo'/>
+    </>
   )
 }
 
